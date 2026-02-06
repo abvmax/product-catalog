@@ -1,0 +1,62 @@
+.header {
+  padding: 15px 0px;
+
+  &__img {
+    width: 50px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__block {
+    position: relative;
+  }
+
+  &__count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--orange);
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    svg {
+      cursor: pointer;
+    }
+
+    &-favorites-svg {
+      &:hover {
+        fill: var(--red);
+      }
+
+      &:active {
+        fill: var(--darkRed);
+      }
+    }
+
+    &-cart-svg {
+      &:hover {
+        fill: var(--dark-blue);
+      }
+
+      &:active {
+        fill: var(--blue);
+      }
+    }
+  }
+}

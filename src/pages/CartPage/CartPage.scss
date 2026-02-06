@@ -1,0 +1,151 @@
+.cart {
+  &__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #999;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-bottom: 30px;
+  }
+
+  &__items-section {
+    flex: 1 1 633px;
+    min-width: 300px;
+  }
+
+  &__summary-section {
+    position: relative;
+    flex: 0 0 350px;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__order-button {
+    position: absolute;
+    bottom: -35px;
+    left: 0px;
+    border-radius: 15px;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px;
+    width: 100%;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+
+.cart-item {
+  padding: 20px;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+
+  &__flexColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f8f9fa;
+    padding: 10px;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--defText);
+  }
+
+  &__price {
+    font-size: 15px;
+    color: var(--gray);
+    font-weight: 600;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button {
+    color: var(--lightOrangre);
+    &:hover {
+      color: var(--orange);
+    }
+  }
+
+  &__quantity {
+    min-width: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  &__total {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  &__remove {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: var(--red);
+
+    &:hover {
+      color: var(--darkRed);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use "_variables" as *;
+
+@mixin container-responsive {
+  max-width: $container-default;
+  width: 100%;
+  margin: 0 auto;
+  padding: $padding-default;
+
+  @media (max-width: $container-l) {
+    max-width: $container-l;
+    padding: $padding-l;
+  }
+
+  @media (max-width: $container-s) {
+    max-width: $container-s;
+    padding: $padding-s;
+  }
+}
